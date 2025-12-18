@@ -1,3 +1,5 @@
+# This is the copy repo, original one is now moved to an organisation - v1 of Find My Vakeel
+
 # Find My Vakeel - Legal Services Platform
 
 A modern legal services platform connecting clients with qualified lawyers through AI-powered matching and consultation services.
