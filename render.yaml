@@ -1,0 +1,35 @@
+services:
+  # Full Stack Service (Frontend + Backend)
+  - type: web
+    name: axsyn-tech-launchpad
+    runtime: node
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: MEGALLM_API_KEY
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
+      - key: VITE_EMAILJS_PUBLIC_KEY
+        sync: false
+      - key: VITE_EMAILJS_SERVICE_ID
+        sync: false
+      - key: VITE_EMAILJS_TEMPLATE_ID
+        sync: false
+      - key: FRONTEND_URL
+        value: https://axsyn-tech.onrender.com
+      - key: RENDER_EXTERNAL_URL
+        value: https://axsyn-tech.onrender.com
+      - key: PORT
+        value: 10000
